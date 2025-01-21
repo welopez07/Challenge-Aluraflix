@@ -36,7 +36,7 @@ Si deseas contribuir a este proyecto, sigue los siguientes pasos:
 
 ## Enlace del Proyecto
 
-**
+https://challenge-aluraflix-chi.vercel.app/
 
 ## Licencia
 
