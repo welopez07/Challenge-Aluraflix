@@ -1,0 +1,38 @@
+.videos {
+    display: contents;
+}
+
+.horizontalScroll {
+    display: grid;
+    grid-auto-flow: column;
+    box-sizing: border-box;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    grid-gap: 2rem;
+    padding: 2rem;
+    -webkit-overflow-scrolling: touch;
+    grid-auto-columns: calc(33.33% - 1rem);
+}
+
+@media (max-width: 768px) {
+    .horizontalScroll {
+        grid-auto-columns: 100%; /* Un solo elemento por vez */
+    }
+}
+
+.horizontalScroll::-webkit-scrollbar {
+    height: 10px; 
+}
+
+.horizontalScroll::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.horizontalScroll::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 10px;
+}
+
+.horizontalScroll::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
